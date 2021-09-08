@@ -1,0 +1,248 @@
+@font-face {
+	font-family: "TheSans";
+	src: url("../../../dist/fonts/TheSansC5-Plain.ttf");
+	src: url("../../../dist/fonts/TheSansC5-Plain.eot") format("embedded-opentype"),
+		url("../../../dist/fonts/TheSansC5-Plain.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+}
+
+.ourteam {
+	position: relative;
+
+	* {
+		font-family: "TheSans", sans-serif;
+	}
+
+	> div {
+		display: flex;
+		justify-content: center;
+
+		.card {
+			max-width: 480px;
+			cursor: pointer;
+			overflow: hidden;
+
+			&:hover {
+				figure {
+					position: relative;
+					transform: scale(1.1);
+					transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+					&::after {
+						content: "";
+						width: 100%;
+						height: 100%;
+						position: absolute;
+						background: rgba($color: #003ca5, $alpha: 0.45);
+						top: 0;
+						left: 0;
+					}
+				}
+
+				a,
+				h3,
+				span {
+					color: #003ca5;
+					transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+				}
+
+				a {
+					&::before {
+						border-top-color: #003ca5;
+						border-right-color: #003ca5;
+						transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+					}
+				}
+			}
+
+			figure {
+				width: 100%;
+				padding-top: 66.66%;
+				box-sizing: border-box;
+				background-image: linear-gradient(128deg, #eeeeee 0%, #d8d8d8 100%);
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				margin: 0;
+				transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+			}
+
+			a,
+			h3,
+			span {
+				transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+			}
+
+			h3 {
+				color: #009adf;
+				font-size: 18px;
+				margin: 0 0 5px;
+			}
+
+			a,
+			span {
+				color: #009adf;
+			}
+
+			p {
+				height: 9em; 
+				color: #34383c;
+				font-size: 15px;
+				line-height: 26px;
+				margin: 10px 0 0;
+				position: relative;
+				overflow: hidden;
+
+				&::after {
+					content: "";
+					position: absolute;
+					z-index: 1;
+					bottom: 0;
+					left: 0;
+					pointer-events: none;
+					background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 90%);
+					width: 100%;
+					height: 6em;
+				}
+			}
+
+			a {
+				color: #007db8;
+				display: block;
+				margin: 20px 0 0;
+				text-decoration: none;
+
+				&::before {
+					content: "";
+					border: 8px solid transparent;
+					border-top-color: #007db8;
+					border-top-right-radius: 3px;
+					border-right-color: #007db8;
+					display: inline-block;
+					margin: 0 10px 0 0;
+					transition: all 0.2s ease 0s;
+					vertical-align: middle;
+					transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+				}
+			}
+		}
+	}
+}
+
+.profile {
+	width: 100% !important;
+	height: 100%;
+	left: 0 !important;
+	margin: 0 !important;
+
+	* {
+		font-family: "TheSans", sans-serif;
+	}
+
+	.close {
+		width: 80px;
+		height: 80px;
+		background: #007db8;
+		border-radius: 0 !important;
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: 0.3;
+		cursor: pointer;
+		z-index: 1;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&::after,
+		&::before {
+			position: absolute;
+			left: 40px;
+			content: " ";
+			top: 20px;
+			height: 40px;
+			width: 2px;
+			background-color: #fff;
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+
+		&::before {
+			transform: rotate(45deg);
+		}
+	}
+
+	> div {
+		margin: 0 !important;
+
+		figure {
+			width: 100%;
+			padding-top: 66.66%;
+			box-sizing: border-box;
+			background-image: linear-gradient(128deg, #eeeeee 0%, #d8d8d8 100%);
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			margin: 0;
+		}
+
+		.highlights {
+			margin: 10px 0;
+		}
+
+		.header {
+			h3 {
+				color: #007db8;
+				font-size: 28px;
+				font-weight: 400;
+				line-height: 1.16;
+				letter-spacing: -1px;
+				margin: 0 0 25px;
+
+				&:first-child {
+					color: #003ca5;
+					margin: 0;
+				}
+			}
+		}
+
+		.contact {
+			display: flex;
+			flex-direction: column;
+			font-size: 18px;
+			line-height: 26px;
+
+			label {
+				color: #007db8;
+				display: flex;
+				font-size: 15px;
+
+				span {
+					color: #34383c;
+					display: block;
+					margin: 0 5px 0 0;
+				}
+			}
+		}
+
+		.about {
+			margin: 30px 0 0;
+
+			label {
+				color: #007db8;
+				display: block;
+				font-size: 18px;
+				margin: 0 0 15px;
+			}
+
+			> div {
+				color: #34383c;
+				font-size: 15px;
+				line-height: 26px;
+				margin: 10px 0 0;
+			}
+		}
+	}
+}

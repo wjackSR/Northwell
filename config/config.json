@@ -1,0 +1,94 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "tabbed-area-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tabbedArea/TabbedAreaWebPart.js",
+          "manifest": "./src/webparts/tabbedArea/TabbedAreaWebPart.manifest.json"
+        }
+      ]
+    },
+    "video-section-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/videoSection/VideoSectionWebPart.js",
+          "manifest": "./src/webparts/videoSection/VideoSectionWebPart.manifest.json"
+        }
+      ]
+    },
+    "branding-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/branding/BrandingApplicationCustomizer.js",
+          "manifest": "./src/extensions/branding/BrandingApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "fa-qs-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/faQs/FaQsWebPart.js",
+          "manifest": "./src/webparts/faQs/FaQsWebPart.manifest.json"
+        }
+      ]
+    },
+    "blogs-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/blogs/BlogsWebPart.js",
+          "manifest": "./src/webparts/blogs/BlogsWebPart.manifest.json"
+        }
+      ]
+    },
+    "our-team-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/ourTeam/OurTeamWebPart.js",
+          "manifest": "./src/webparts/ourTeam/OurTeamWebPart.manifest.json"
+        }
+      ]
+    },
+    "page-header-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/pageHeader/PageHeaderWebPart.js",
+          "manifest": "./src/webparts/pageHeader/PageHeaderWebPart.manifest.json"
+        }
+      ]
+    },
+    "title-section-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/titleSection/TitleSectionWebPart.js",
+          "manifest": "./src/webparts/titleSection/TitleSectionWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "https://code.jquery.com/jquery-3.6.0.min.js",
+      "globalName": "jQuery"
+    },
+    "semantic": {
+      "path": "https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.8/dist/semantic.min.js",
+      "globalName": "semantic",
+      "globalDependencies": [
+        "jquery"
+      ]
+    }
+  },
+  "localizedResources": {
+    "TabbedAreaWebPartStrings": "lib/webparts/tabbedArea/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js",
+    "VideoSectionWebPartStrings": "lib/webparts/videoSection/loc/{locale}.js",
+    "BrandingApplicationCustomizerStrings": "lib/extensions/branding/loc/{locale}.js",
+    "FaQsWebPartStrings": "lib/webparts/faQs/loc/{locale}.js",
+    "BlogsWebPartStrings": "lib/webparts/blogs/loc/{locale}.js",
+    "OurTeamWebPartStrings": "lib/webparts/ourTeam/loc/{locale}.js",
+    "PageHeaderWebPartStrings": "lib/webparts/pageHeader/loc/{locale}.js",
+    "TitleSectionWebPartStrings": "lib/webparts/titleSection/loc/{locale}.js"
+  }
+}

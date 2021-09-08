@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "73921677-d4b3-4fac-8e4a-c20e105ebcf9",
+  "alias": "TabbedAreaWebPart",
+  "componentType": "WebPart",
+
+
+  "version": "*",
+  "manifestVersion": 2,
+  "supportsFullBleed": true,
+
+
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "Tabbed Area" },
+    "description": { "default": "Tabbed area webpart by Silicon Reef" },
+   "iconImageUrl": "data:image/png;base64,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",
+
+    "properties": {
+      "description": "Tabbed Area"
+    }
+  }]
+}
